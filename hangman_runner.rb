@@ -1,3 +1,7 @@
 require_relative "hangman"
 
-Hangman.new()
+Hangman.new(word)
+
+## nothing else here - 
+
+puts "hello"
