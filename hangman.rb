@@ -10,13 +10,18 @@ class Hangman
 
   def initialize(word)
     @word = word
-    @board = '_ _ _ _ _'
+    #@board =  word.length '_ _ _ _ _'
     @chances = 8
     # word = randomly select a word from an array
     puts "Hangman game!"
   end
   
   def guess!(letter)
+  end
+
+  def board
+    board = '_ ' * @word.length
+    board.strip
   end
 
   def won?
